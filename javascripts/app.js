@@ -34,6 +34,54 @@
       summary: "A studie in psalms of King David seeking God.",
       imageUrl: "/images/crying_out_to_god.jpg",
       createdAt: new Date('12-22-2012')
+    }, {
+      id: 2,
+      title: "Into the belly of the whale",
+      summary: "A studie in psalms of King David seeking God.",
+      imageUrl: "/images/crying_out_to_god.jpg",
+      createdAt: new Date('12-22-2012')
+    }, {
+      id: 3,
+      title: "Jeremiah gets down",
+      summary: "A studie in psalms of King David seeking God.",
+      imageUrl: "/images/crying_out_to_god.jpg",
+      createdAt: new Date('12-22-2012')
+    }, {
+      id: 4,
+      title: "Crying out to God",
+      summary: "A studie in psalms of King David seeking God.",
+      imageUrl: "/images/crying_out_to_god.jpg",
+      createdAt: new Date('12-22-2012')
+    }, {
+      id: 5,
+      title: "Crying out to God",
+      summary: "A studie in psalms of King David seeking God.",
+      imageUrl: "/images/crying_out_to_god.jpg",
+      createdAt: new Date('12-22-2012')
+    }, {
+      id: 6,
+      title: "Crying out to God",
+      summary: "A studie in psalms of King David seeking God.",
+      imageUrl: "/images/crying_out_to_god.jpg",
+      createdAt: new Date('12-22-2012')
+    }, {
+      id: 7,
+      title: "Crying out to God",
+      summary: "A studie in psalms of King David seeking God.",
+      imageUrl: "/images/crying_out_to_god.jpg",
+      createdAt: new Date('12-22-2012')
+    }, {
+      id: 8,
+      title: "Crying out to God",
+      summary: "A studie in psalms of King David seeking God.",
+      imageUrl: "/images/crying_out_to_god.jpg",
+      createdAt: new Date('12-22-2012')
+    }, {
+      id: 9,
+      title: "Crying out to God",
+      summary: "A studie in psalms of King David seeking God.",
+      imageUrl: "/images/crying_out_to_god.jpg",
+      createdAt: new Date('12-22-2012')
     }
   ];
 
