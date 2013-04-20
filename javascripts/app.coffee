@@ -5,9 +5,13 @@ App.Store = DS.Store.extend
   adapter: 'DS.FixtureAdapter'
 
 App.Router.map ->
-  @resource "lessons", ->
-    @resource "lesson", { path: ":lesson_id"}
+  @resource "lessons", { path: "lessons" }
+  @resource "lesson", { path: "lesson/:lesson_id"}
 
+
+App.LessonsRoute = Ember.Route.extend
+  model: ->
+    App.Lesson.find()
 
 App.Lesson = DS.Model.extend
   title: DS.attr('string')
@@ -70,13 +74,6 @@ App.Lesson.FIXTURES = [
   }
   {
     id: 8
-    title: "Crying out to God"
-    summary: "A studie in psalms of King David seeking God."
-    imageUrl: "/images/crying_out_to_god.jpg"
-    createdAt: new Date('12-22-2012')
-  }
-  {
-    id: 9
     title: "Crying out to God"
     summary: "A studie in psalms of King David seeking God."
     imageUrl: "/images/crying_out_to_god.jpg"

@@ -24,6 +24,28 @@
       {{template "lesson"}}
     </script>
 
+    <script type="text/x-handlebars" data-template-name="lessons">
+      <div class="row">
+      {{#each model}}
+        {{template "lesson_preview"}}
+      {{/each}}
+      </div>
+    </script>
+
+    <script type="text/x-handlebars" data-template-name="lesson_preview">
+      <div class="lesson_preview large-3 small-6 columns">
+        {{#linkTo 'lesson' this}}
+          <img {{bindAttr src="imageUrl"}}>
+          <p class="lesson_summary">
+            {{summary}}
+          </p>
+          <h2>{{title}}</h2>
+        {{/linkTo}}
+      </div>
+
+      {{outlet}}
+    </script>
+
     <script type="text/x-handlebars" data-template-name="lesson">
       <div class="row">
         <div class="lesson_container large-6 small-12 columns">

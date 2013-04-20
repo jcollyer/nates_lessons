@@ -9,11 +9,18 @@
   });
 
   App.Router.map(function() {
-    return this.resource("lessons", function() {
-      return this.resource("lesson", {
-        path: ":lesson_id"
-      });
+    this.resource("lessons", {
+      path: "lessons"
     });
+    return this.resource("lesson", {
+      path: "lesson/:lesson_id"
+    });
+  });
+
+  App.LessonsRoute = Ember.Route.extend({
+    model: function() {
+      return App.Lesson.find();
+    }
   });
 
   App.Lesson = DS.Model.extend({
@@ -72,12 +79,6 @@
       createdAt: new Date('12-22-2012')
     }, {
       id: 8,
-      title: "Crying out to God",
-      summary: "A studie in psalms of King David seeking God.",
-      imageUrl: "/images/crying_out_to_god.jpg",
-      createdAt: new Date('12-22-2012')
-    }, {
-      id: 9,
       title: "Crying out to God",
       summary: "A studie in psalms of King David seeking God.",
       imageUrl: "/images/crying_out_to_god.jpg",
