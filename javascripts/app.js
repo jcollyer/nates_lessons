@@ -3,12 +3,12 @@
 
   window.App = Ember.Application.create();
 
-  App.Router.map(function() {});
-
-  App.IndexRoute = Ember.Route.extend({
-    model: function() {
-      return ['red', 'yellow', 'blue'];
-    }
+  App.Router.map(function() {
+    return this.resource("lessons", function() {
+      return this.resource("lesson", {
+        path: ":lesson_id"
+      });
+    });
   });
 
 }).call(this);
