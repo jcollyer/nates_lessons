@@ -18,3 +18,46 @@ h2{
   font-weight:400;
   letter-spacing:-1px;
 }
+
+.lesson_wrapper {
+  height:400px;
+  position:relative;
+  width:400px;
+
+  &:hover > .lesson_play {
+    opacity:0.8;
+  }
+
+  &:hover > .lesson_image {
+    box-shadow: 0 0 5px #333;
+  }
+}
+
+.lesson_image {
+  height:400px;
+  width:400px;
+}
+
+.lesson_play {
+  border: 3px solid #fff;
+  border-radius:75px;
+  height:150px;
+  left:50%;
+  margin:-75px 0 0 -75px;
+  opacity:0.3;
+  position:absolute;
+  top:50%;
+  width:150px;
+
+  &:before {
+    border-left: 100px solid #fff;
+    border-top: 50px solid transparent;
+    border-bottom: 50px solid transparent;
+    content:"";
+    height: 0;
+    left:33px;
+    position:absolute;
+    top:21px;
+    width: 0;
+  }
+}
