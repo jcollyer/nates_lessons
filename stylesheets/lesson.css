@@ -1,0 +1,28 @@
+.lesson_wrapper {
+  height: 400px;
+  position: relative;
+  width: 400px; }
+  .lesson_wrapper:hover > .lesson_play_large {
+    opacity: 0.8; }
+  .lesson_wrapper:hover > .lesson_image {
+    box-shadow: 0 0 5px #333; }
+
+.lesson_image {
+  height: 400px;
+  width: 400px; }
+
+.lesson_mod {
+  background: rgba(100, 100, 100, 0.8);
+  height: 140px; }
+  .lesson_mod .lesson_mod_image {
+    float: left;
+    position: relative;
+    width: 140px; }
+  .lesson_mod .mod_img {
+    width: 140px;
+    float: left; }
+  .lesson_mod .lesson_mod_info {
+    float: left;
+    width: 400px; }
+    .lesson_mod .lesson_mod_info h1 {
+      font-size: 100%; }
