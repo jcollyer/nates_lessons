@@ -10,18 +10,38 @@
 
   <body>
     <script type="text/x-handlebars">
+      {{template "lessonmod"}}
       <div class="container">
         <div class="row">
           <div class="small-12 columns">
             <h1>Welcome to Nate&apos;s Lessons</h1>
           </div>
         </div>
+        <ul class="nav">
+          <li>{{#linkTo "lessons"}}Lessons{{/linkTo}}</li>
+          <li>{{#linkTo "index"}}Home{{/linkTo}}</li>
+        </ulv>
         {{outlet}}
       </div>
     </script>
 
     <script type="text/x-handlebars" data-template-name="index">
-      {{template "lesson"}}
+      <h1>home page</h1>
+    </script>
+
+    <script type="text/x-handlebars" data-template-name="lessonmod">
+      <div class="lesson_mod">
+        <div class="lesson_mod_image">
+          <img src="/images/crying_out_to_god.jpg" class="mod_img">
+          <div class="lesson_play"></div>
+        </div>
+        <div class="lesson_mod_info">
+          <h1>Crying out to God</h1>
+          <p>A studie in psalms of King David seeking God</p>
+          <p>3 months ago</p>
+          <div class="mod_share"></div>
+        </div>
+      </div>
     </script>
 
     <script type="text/x-handlebars" data-template-name="lessons">
@@ -51,7 +71,7 @@
         <div class="lesson_container large-6 small-12 columns">
           <div class="lesson_wrapper">
             <img class="lesson_image" {{bindAttr src="imageUrl"}}>
-            <div class="lesson_play"></div>
+            <div class="lesson_play_large"></div>
           </div>
         </div>
         <div class="lesson_info large-6 small-12 columns">

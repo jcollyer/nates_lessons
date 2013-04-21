@@ -7,6 +7,7 @@ App.Store = DS.Store.extend
 App.Router.map ->
   @resource "lessons", { path: "lessons" }
   @resource "lesson", { path: "lesson/:lesson_id"}
+  @resource "lessonmod"
 
 
 App.LessonsRoute = Ember.Route.extend
