@@ -1,15 +1,18 @@
-@import url('play_mark.css');
+@import url('lessons_mod.css');
 @import url('lessons.css');
 @import url('lesson.css');
+@import url('audio_interface.css');
 
 $font-body: 'News Cycle', sans-serif;
 $font-heading: 'Istok Web', sans-serif;
 
 body{
-  background:#fefefe;
+  background:url('/images/back.png') no-repeat #f0f2ef;
+  background-position:top left;
   color:#333;
   font-family:$font-body;
   font-size: 110%;
+
 }
 
 h1{
@@ -21,4 +24,8 @@ h2{
   font-family:$font-heading;
   font-weight:400;
   letter-spacing:-1px;
+}
+
+.container {
+	padding:140px 0 0 0;
 }

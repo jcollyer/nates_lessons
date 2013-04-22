@@ -6,13 +6,13 @@ App.Store = DS.Store.extend
 
 App.Router.map ->
   @resource "lessons", { path: "lessons" }
-  @resource "lesson", { path: "lesson/:lesson_id"}
-  @resource "lessonmod"
+  @resource "lessonshow", { path: "lessonshow/:lesson_id"}
 
 
 App.LessonsRoute = Ember.Route.extend
   model: ->
     App.Lesson.find()
+
 
 App.Lesson = DS.Model.extend
   title: DS.attr('string')

@@ -4,7 +4,7 @@
   position:relative;
   width:400px;
 
-  &:hover > .lesson_play_large {
+  &:hover > .play_mark_large {
     opacity:0.8;
   }
 
@@ -16,25 +16,4 @@
 .lesson_image {
   height:400px;
   width:400px;
-}
-
-.lesson_mod{
-  background:rgba(100,100,100,0.8);
-  height:140px;
-  .lesson_mod_image{
-    float:left;
-    position:relative;
-    width:140px;
-  }
-  .mod_img{
-    width:140px;
-    float:left;
-  }
-  .lesson_mod_info{
-    float:left;
-    width:400px;
-    h1{
-      font-size:100%;
-    }
-  }
 }

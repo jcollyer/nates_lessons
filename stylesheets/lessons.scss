@@ -1,6 +1,14 @@
 .lessons_list {
+  position:relative;
   a:hover > .lessons_summary {
     opacity:1;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+  }
+  &:hover > .play_mark_medium {
+    opacity:0.6;
     -webkit-transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
     -o-transition: all 0.2s ease-in-out;

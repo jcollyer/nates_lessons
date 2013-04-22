@@ -10,7 +10,7 @@
 
   <body>
     <script type="text/x-handlebars">
-      {{template "lessonmod"}}
+      {{template "lesson"}}
       <div class="container">
         <div class="row">
           <div class="small-12 columns">
@@ -29,17 +29,57 @@
       <h1>home page</h1>
     </script>
 
-    <script type="text/x-handlebars" data-template-name="lessonmod">
+    <script type="text/x-handlebars" data-template-name="lesson">
       <div class="lesson_mod">
-        <div class="lesson_mod_image">
-          <img src="/images/crying_out_to_god.jpg" class="mod_img">
-          <div class="lesson_play"></div>
-        </div>
-        <div class="lesson_mod_info">
-          <h1>Crying out to God</h1>
-          <p>A studie in psalms of King David seeking God</p>
-          <p>3 months ago</p>
-          <div class="mod_share"></div>
+        <div class="lesson_mod_menu">
+          <div id="jquery_jplayer_1" class="jp-jplayer"></div>
+
+          <div id="jp_container_1" class="jp-audio">
+              <div class="jp-type-single">
+                  <div class="jp-gui jp-interface">
+                      <div class="jp-controls">
+                        <div class="lesson_mod_image">
+                          <a href="javascript:;" class="jp-play" tabindex="1">
+                            <img src="/images/crying_out_to_god.jpg" class="mod_img">
+                            <div class="play_mark_small"></div>
+                          </a>
+                          <a href="javascript:;" class="jp-pause" tabindex="1">
+                            <img src="/images/crying_out_to_god.jpg" class="mod_img">
+                            <div class="pause_mark_small"></div>
+                          </a>
+                        </div>
+                        <div class="lesson_mod_controls">
+        
+                          <div class="jp-progress lesson_progress_bar">
+                            <div class="jp-seek-bar"><div class="jp-play-bar progress_bar"></div></div>
+                          </div>  
+
+                          <div class="lesson_mod_time">
+                            <div class="jp-current-time" class="lesson_current_time"></div>
+                            <div class="jp-duration" class="lesson_duration"></div>
+                          </div>  
+
+                          <div class="lesson_mod_volume">
+                            <a href="javascript:;" class="jp-mute" tabindex="1" title="mute">mute</a>
+                            <div class="jp-volume-bar"><div class="jp-volume-bar-value"></div></div>
+                            <a href="javascript:;" class="jp-unmute" tabindex="1" title="unmute">unmute</a>
+                            <a href="javascript:;" class="jp-volume-max" tabindex="1" title="max volume">max volume</a>
+                          </div>
+
+                        </div>                   
+                      </div>
+                </div>
+            </div>
+            </div>
+
+          </div>
+         
+          <div class="lesson_mod_info">
+            <h1>Crying out to God</h1>
+            <p>A studie in psalms of King David seeking God</p>
+            <p>3 months ago</p>
+            <div class="mod_share"></div>
+          </div>
         </div>
       </div>
     </script>
@@ -47,14 +87,15 @@
     <script type="text/x-handlebars" data-template-name="lessons">
       <div class="row">
       {{#each model}}
-        {{template "lesson_preview"}}
+        {{partial "lessons_list"}}
       {{/each}}
       </div>
     </script>
 
-    <script type="text/x-handlebars" data-template-name="lesson_preview">
+    <script type="text/x-handlebars" data-template-name="_lessons_list">
       <div class="lessons_list large-3 small-6 columns">
-        {{#linkTo 'lesson' this}}
+        <div class="play_mark_medium">&nbsp;</div>
+        {{#linkTo 'lessonshow' this}}
           <img {{bindAttr src="imageUrl"}}>
           <p class="lessons_summary">
             {{summary}}
@@ -62,16 +103,14 @@
           <h2>{{title}}</h2>
         {{/linkTo}}
       </div>
-
-      {{outlet}}
     </script>
 
-    <script type="text/x-handlebars" data-template-name="lesson">
+    <script type="text/x-handlebars" data-template-name="lessonshow">
       <div class="row">
         <div class="lesson_container large-6 small-12 columns">
           <div class="lesson_wrapper">
             <img class="lesson_image" {{bindAttr src="imageUrl"}}>
-            <div class="lesson_play_large"></div>
+            <div class="play_mark_large">&nbsp;</div>
           </div>
         </div>
         <div class="lesson_info large-6 small-12 columns">
@@ -84,10 +123,12 @@
 
     <script src="/javascripts/libs/jquery-1.9.1.js"></script>
     <script src="/javascripts/libs/moment.js"></script>
+    <script src="/javascripts/libs/jquery.jplayer.min.js"></script>
     <script src="/javascripts/libs/handlebars-1.0.0-rc.3.js"></script>
     <script src="/javascripts/libs/ember-1.0.0-rc.2.js"></script>
     <script src="/javascripts/libs/ember-data.js"></script>
     <script src="/javascripts/app.js"></script>
+    <script src="/javascripts/custom.js"></script>
 
   </body>
 </html>

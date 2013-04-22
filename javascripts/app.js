@@ -12,10 +12,9 @@
     this.resource("lessons", {
       path: "lessons"
     });
-    this.resource("lesson", {
-      path: "lesson/:lesson_id"
+    return this.resource("lessonshow", {
+      path: "lessonshow/:lesson_id"
     });
-    return this.resource("lessonmod");
   });
 
   App.LessonsRoute = Ember.Route.extend({
