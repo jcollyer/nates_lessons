@@ -3,13 +3,15 @@
 @import url('lesson.css');
 @import url('audio_interface.css');
 body {
+  background: white;
   color: #333;
   font-family: "News Cycle", sans-serif;
   font-size: 110%; }
 
 h1 {
   font-family: "Istok Web", sans-serif;
-  font-weight: 400; }
+  font-weight: 400;
+  color: white; }
 
 h2 {
   font-family: "Istok Web", sans-serif;
@@ -17,6 +19,23 @@ h2 {
   letter-spacing: -1px; }
 
 .container {
-  background: url("/images/back.png") no-repeat #f0f2ef;
-  background-position: top left;
-  margin: 140px 0 0 0px; }
+  margin: 200px 0 0 0; }
+
+.home_header {
+  background: url(/images/grid.png);
+  background-position: 0 -2px;
+  padding: 40px;
+  width: 100%; }
+
+.nav_container {
+  bottom: 0px;
+  position: absolute;
+  text-align: center; }
+  .nav_container .nav_item a {
+    line-height: 4em;
+    display: block;
+    width: 100%; }
+    .nav_container .nav_item a:hover {
+      color: #1b7a98; }
+  .nav_container .nav_item:hover {
+    background: #333; }

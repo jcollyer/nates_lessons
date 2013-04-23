@@ -7,15 +7,16 @@ $font-body: 'News Cycle', sans-serif;
 $font-heading: 'Istok Web', sans-serif;
 
 body{
+  background:white;
   color:#333;
   font-family:$font-body;
   font-size: 110%;
-
 }
 
 h1{
   font-family:$font-heading;
   font-weight:400;
+  color:white;
 }
 
 h2{
@@ -25,8 +26,30 @@ h2{
 }
 
 .container {
-  background:url('/images/back.png') no-repeat #f0f2ef;
-  background-position:top left;
-	margin:140px 0 0 0px;
+  margin:200px 0 0 0;
+}
+
+.home_header{
+  background:url(/images/grid.png);
+  background-position:0 -2px;
+  padding:40px;  
+  width:100%;
+}
+
+.nav_container{
+  bottom:0px;
+  position:absolute;
+  text-align:center;
+  .nav_item{
+    a{
+      line-height:4em;
+      display:block;
+      width:100%;
+      &:hover{color:#1b7a98;}
+    }
+    &:hover{
+      background:#333;
+    }
+  }
 }
 

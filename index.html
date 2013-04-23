@@ -10,23 +10,18 @@
 
   <body>
     <script type="text/x-handlebars">
+      
       {{template "lesson"}}
-      <div class="container">
-        <div class="row">
-          <div class="small-12 columns">
-            <h1>Welcome to Nate&apos;s Lessons</h1>
-          </div>
-        </div>
-        <ul class="nav">
-          <li>{{#linkTo "lessons"}}Lessons{{/linkTo}}</li>
-          <li>{{#linkTo "index"}}Home{{/linkTo}}</li>
-        </ulv>
+      <div class="container"> 
         {{outlet}}
       </div>
+
     </script>
 
     <script type="text/x-handlebars" data-template-name="index">
-      <h1>home page</h1>
+      <div class="home_header">
+        <h1>Welcome to Nate&apos;s Lessons</h1>
+      </div>
     </script>
 
     <script type="text/x-handlebars" data-template-name="lesson">
@@ -71,6 +66,17 @@
                 </div>
               </div>
             </div>
+
+            <div class="row nav_container">
+              <div class="nav_item small-6 large-2 columns">{{#linkTo "index"}}home{{/linkTo}}</div>
+              <div class="nav_item small-6 large-2 columns">{{#linkTo "lessons"}}teaching{{/linkTo}}</div>
+              <div class="nav_item small-6 large-2 columns"><a href="#">about</a></div>
+              <div class="nav_item small-6 large-2 columns"><a href="#">reading</a></div>
+              <div class="nav_item small-6 large-2 columns"><a href="#">video</a></div>
+              <div class="nav_item small-6 large-2 columns"><a href="#">blog</a></div>
+            </div>
+
+            
           </div>    
           <div class="lesson_mod_info">
             <h1>Crying out to God</h1>
