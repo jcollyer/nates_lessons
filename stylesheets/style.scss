@@ -1,4 +1,4 @@
-@import url('lessons_mod.css');
+//@import url('lessons_mod.css');
 @import url('lessons.css');
 @import url('lesson.css');
 @import url('audio_interface.css');
@@ -52,4 +52,154 @@ h2{
     }
   }
 }
+
+
+
+.lesson_mod{
+  background:white;
+  height:200px;
+  margin:-200px 0 0 0;
+  position:fixed;
+  width:100%;
+  z-index:99;
+  .lesson_mod_menu{
+    .lesson_mod_image{
+      float:left;
+      margin:0 10px 0 0;
+      position:relative;
+      width:140px;
+      .mod_img{
+        width:140px;
+        float:left;
+      }
+      .mod_img_pause{
+        width:140px;
+        float:left;
+      }
+    }
+    .lesson_mod_controls{
+      float:left;
+      width:33%;
+      .lesson_progress_bar{
+        border-bottom:1px solid #666;
+        border-radius:20px;
+        box-shadow:1px 1px 1px #aaa;
+        height:20px;
+        margin:10px;
+        padding:1px 4px;
+        .progress_bar{
+          border-radius:130px;
+          height:16px;
+          background:#555;
+        }
+      }
+      .lesson_mod_time{
+        width:100%;
+        height:24px;
+        .lesson_current_time{
+          float:left;
+          font-size:80%;
+          margin:0 0 0 10px;
+          padding:3px;
+          position:relative;
+          width:50%;
+           &:before{
+            border-left: 12px solid transparent;
+            border-right: 12px solid transparent;
+            border-top: 6px solid #555;
+            content:"";
+            height: 0;
+            left:6px;
+            position:absolute;
+            bottom:-4px;
+            width: 0;
+          }
+        }
+        .lesson_duration{
+          float:right;
+          font-size:80%;
+          margin:0 8px 0 0;
+          padding:3px;
+          text-align:right;
+          position:relative;
+          &:before{
+            border-left: 12px solid transparent;
+            border-right: 12px solid transparent;
+            border-top: 6px solid #555;
+            content:"";
+            height: 0;
+            position:absolute;
+            right:8px;
+            bottom:-4px;
+            width: 0;
+          }
+        }
+      }
+      .lesson_mod_volume{
+        width:100%;
+        display:block;
+        .lesson_mod_volume_controls{
+          float:left;
+          width:27px;
+        }
+        .volume-meter {
+          border-bottom:1px solid #999;
+          border-radius: 10px; 
+          box-shadow: inset 0 -1px 1px #333;
+          display: inline-block; 
+          float:left;
+          height: 19px; 
+          padding:0 6px 0 0px;
+          margin: 7px 0 0px; 
+          width:66%;
+          .volume-bar { 
+            -webkit-animation: volumecontrol 8s infinite ease-in-out; 
+            -moz-animation: volumecontrol 8s infinite ease-in-out; 
+            animation: volumecontrol 8s infinite ease-in-out; 
+            height: 12px; 
+            width: 75%; 
+            margin: 3px 3px; 
+            display: block; 
+            border-radius: 6px;  
+            background: #555;
+          }
+        }
+        .lesson_mod_volume_max{
+          float:left;
+          width:40px;
+        }
+      } 
+    }
+    .lesson_mod_info{
+      float:left;
+      width:48%;
+      padding:15px;
+      h1{
+        color:#686868;
+        font-size:150%;
+        margin:0 0 3% 0;
+        text-align: right;
+        text-transform: uppercase;
+      }
+      h2{
+        color:#444;
+        font-size:110%;
+        margin:0px;
+        text-align: right;
+        line-height: 1em;
+      }
+      p{
+
+      }
+    }
+  }
+}
+
+
+.jp-mute{background: url(/images/icon_volume_play.png) no-repeat;}
+.jp-unmute{background: url(/images/icon_volume_mute.png) no-repeat;}
+.jp-volume-max{background: url(/images/icon_volume_max.png) no-repeat;}
+.icon-volume { display: inline-block; width: 32px; height: 32px; margin: 6px 2px 6px 6px; }
+
+
 

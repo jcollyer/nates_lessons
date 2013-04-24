@@ -5,6 +5,8 @@ App.Store = DS.Store.extend
   adapter: 'DS.FixtureAdapter'
 
 App.Router.map ->
+  @resource "home"
+  @resource "about"
   @resource "lessons", { path: "lessons" }
   @resource "lessonshow", { path: "lessonshow/:lesson_id"}
 
