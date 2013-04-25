@@ -117,17 +117,23 @@
       width: 48%;
       padding: 15px; }
       .lesson_mod .lesson_mod_menu .lesson_mod_info h1 {
-        color: #686868;
+        color: #555;
         font-size: 150%;
         margin: 0 0 3% 0;
         text-align: right;
         text-transform: uppercase; }
       .lesson_mod .lesson_mod_menu .lesson_mod_info h2 {
-        color: #444;
+        color: #555;
         font-size: 110%;
         margin: 0px;
         text-align: right;
         line-height: 1em; }
+      .lesson_mod .lesson_mod_menu .lesson_mod_info h3 {
+        color: #555;
+        font-size: 90%;
+        line-height: 1em;
+        margin: 0px;
+        text-align: right; }
 
 .social_container {
   width: 100%; }
@@ -140,8 +146,23 @@
   .social_container .social_icon {
     background-size: 20%;
     background-position: 3px;
-    border: 1px solid #777;
+    border: 1px solid #555;
     border-radius: 20px;
     float: left;
+    font-family: "Istok Web", sans-serif;
+    font-size: 80%;
     height: 33px;
+    margin: 0 2px;
+    padding: 0 0px 0 35px;
     width: 30%; }
+    .social_container .social_icon .social_detail {
+      background: #555;
+      border: 1px solid #555;
+      border-top-right-radius: 20px;
+      border-bottom-right-radius: 20px;
+      border-left: 1px solid #555;
+      color: #eee;
+      height: 32px;
+      line-height: 2.2em;
+      margin: 0 -2px 0 0;
+      text-align: center; }

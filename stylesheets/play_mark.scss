@@ -1,27 +1,4 @@
 
-.play_mark_large {
-  border: 3px solid #fff;
-  border-radius:75px;
-  height:150px;
-  left:50%;
-  margin:-75px 0 0 -75px;
-  opacity:0.3;
-  position:absolute;
-  top:50%;
-  width:150px;
-
-  &:before {
-    border-left: 100px solid #fff;
-    border-top: 50px solid transparent;
-    border-bottom: 50px solid transparent;
-    content:"";
-    height: 0;
-    left:33px;
-    position:absolute;
-    top:21px;
-    width: 0;
-  }
-}
 
 .play_mark_medium {
   border: 2px solid #fff;
@@ -34,7 +11,7 @@
   top:50%;
   width:50px;
 
-  &:before {
+  &.paused:before {
     border-left: 30px solid #fff;
     border-top: 15px solid transparent;
     border-bottom: 15px solid transparent;
@@ -58,7 +35,7 @@
   top:50%;
   width:50px;
 
-  &:before {
+  &.paused:before {
     border-left: 30px solid #fff;
     border-top: 15px solid transparent;
     border-bottom: 15px solid transparent;

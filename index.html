@@ -51,51 +51,47 @@
         <div class="lesson_mod_menu">
           <div id="jquery_jplayer_1" class="jp-jplayer"></div>
           <div id="jp_container_1" class="jp-audio">
-            <div class="jp-type-single">
-              <div class="jp-gui jp-interface">
-                <div class="jp-controls">
-                  <div class="lesson_mod_image">
-                    <a href="javascript:;" class="jp-play" tabindex="1">
-                      <img src="/images/crying_out_to_god.jpg" class="mod_img">
-                      <div class="play_mark_small"></div>
-                    </a>
-                    <a href="javascript:;" class="jp-pause" tabindex="1">
-                      <img src="/images/crying_out_to_god.jpg" class="mod_img">
-                      <div class="pause_mark_small"></div>
-                    </a>
+            <div class="jp-controls">
+              <div class="lesson_mod_image">
+                <a href="javascript:;" class="jp-play" tabindex="1">
+                  <img src="/images/crying_out_to_god.jpg" class="mod_img">
+                  <div class="play_mark_small"></div>
+                </a>
+                <a href="javascript:;" class="jp-pause" tabindex="1" style="display:none;">
+                  <img src="/images/crying_out_to_god.jpg" class="mod_img">
+                  <div class="pause_mark_small"></div>
+                </a>
+              </div>
+              <div class="lesson_mod_controls">
+                <div class="lesson_mod_time">
+                  <div class="jp-current-time lesson_current_time"></div>
+                  <div class="jp-duration lesson_duration"></div>
+                </div>  
+                <div class="jp-progress lesson_progress_bar">
+                  <div class="jp-seek-bar"><div class="jp-play-bar progress_bar"></div></div>
+                </div>  
+                <div class="lesson_mod_volume">
+                  <div class="lesson_mod_volume_controls">
+                    <a href="javascript:;" class="icon-volume jp-mute" tabindex="1" title="mute">&nbsp;</a>
+                    <a href="javascript:;" class="icon-volume jp-unmute" tabindex="1" title="unmute" style="display:none;">&nbsp;</a>
                   </div>
-                  <div class="lesson_mod_controls">
-                    <div class="lesson_mod_time">
-                      <div class="jp-current-time lesson_current_time"></div>
-                      <div class="jp-duration lesson_duration"></div>
-                    </div>  
-                    <div class="jp-progress lesson_progress_bar">
-                      <div class="jp-seek-bar"><div class="jp-play-bar progress_bar"></div></div>
-                    </div>  
-                    <div class="lesson_mod_volume">
-                      <div class="lesson_mod_volume_controls">
-                        <a href="javascript:;" class="icon-volume jp-mute" tabindex="1" title="mute">&nbsp;</a>
-                        <a href="javascript:;" class="icon-volume jp-unmute" tabindex="1" title="unmute">&nbsp;</a>
-                      </div>
-                      <div class="volume-meter jp-volume-bar">
-                        <span class="volume-bar jp-volume-bar-value"></span>
-                      </div>
-                      <div class="lesson_mod_volume_max">
-                        <a href="javascript:;" class="icon-volume jp-volume-max" tabindex="1" title="max volume">&nbsp;</a>
-                      </div>
-                    </div>
-                    <div class="social_container">
-                      <div class="social_icon social_facebook">
-                        <div class="social_detail">facebook</div>
-                      </div>
-                      <div class="social_icon social_twitter">
-                        <div class="social_detail">twitter</div>
-                      </div>
-                      <div class="social_icon social_google">
-                        <div class="social_detail">google +</div>
-                      </div>  
-                    </div>
-                  </div>                   
+                  <div class="volume-meter jp-volume-bar">
+                    <span class="volume-bar jp-volume-bar-value"></span>
+                  </div>
+                  <div class="lesson_mod_volume_max">
+                    <a href="javascript:;" class="icon-volume jp-volume-max" tabindex="1" title="max volume">&nbsp;</a>
+                  </div>
+                </div>
+                <div class="social_container">
+                  <div class="social_icon social_facebook">
+                    <div class="social_detail">facebook</div>
+                  </div>
+                  <div class="social_icon social_twitter">
+                    <div class="social_detail">twitter</div>
+                  </div>
+                  <div class="social_icon social_google">
+                    <div class="social_detail">google +</div>
+                  </div>  
                 </div>
               </div>
             </div>
@@ -128,7 +124,7 @@
 
     <script type="text/x-handlebars" data-template-name="_lessons_list">
       <div class="lessons_list large-3 small-6 columns">
-        <div class="play_mark_medium">&nbsp;</div>
+        <div class="play_mark_medium play_button paused">{{mp3}}</div>
         {{#linkTo 'lessonshow' this}}
           <img {{bindAttr src="imageUrl"}}>
           <p class="lessons_summary">
@@ -144,7 +140,7 @@
         <div class="lesson_container large-6 small-12 columns">
           <div class="lesson_wrapper">
             <img class="lesson_image" {{bindAttr src="imageUrl"}}>
-            <div class="play_mark_large">&nbsp;</div>
+            <div class="play_mark_large play_button paused">{{mp3}}</div>
           </div>
         </div>
         <div class="lesson_info large-6 small-12 columns">
