@@ -6,6 +6,7 @@
 
 $font-body: 'News Cycle', sans-serif;
 $font-heading: 'Istok Web', sans-serif;
+$font-style: 'Satisfy', cursive;
 
 body{
   background:white;
@@ -16,6 +17,7 @@ body{
 
 .row {
   width:100%;
+  max-width: auto;
 }
 
 h1{
@@ -36,14 +38,73 @@ a{
 }
 
 .container {
-  margin:210px 0 0 0;
+  margin:150px 0 0 0;
+}
+
+.page_strip{
+  background:url(/images/grid.png);
+  background-position:0 -440px;
+  height:20px; 
+  width:100%;
 }
 
 .home_header{
-  background:url(/images/grid.png);
-  background-position:0 -2px;
-  padding:40px;  
+  background: url(/images/home-header.jpg) no-repeat;
+  background-size: 100%;
+  border-bottom: 1px solid #999;
+  font-size: 0%;
+  padding:9% 0;
+  position: relative;
   width:100%;
+  .home_header_info_one{
+    background:rgba(255,255,255,0.5);
+    bottom:120px;
+    height:27px;
+    left:0px;
+    padding:0px 30px;
+    position: absolute;
+    text-align: left;
+    width:100%;
+    h1{
+      font-family: $font-style;
+      font-size: 46px;
+      margin:-10px 0 0 0;
+      text-shadow:1px 1px 0px #333;
+    }
+  }
+  .home_header_info_two{
+    background:rgba(255,255,255,0.5);
+    bottom:70px;
+    height:47px;
+    left:0px;
+    padding:0px 30px;
+    position: absolute;
+    text-align: center;
+    width:100%;
+    h1{
+      font-family: $font-style;
+      font-size: 86px;
+      margin:-20px 0 0 0;
+      text-shadow:1px 1px 0px #333;
+    }
+  }
+  .home_header_info_three{
+    background:rgba(100,100,100,0.5);
+    bottom:20px;
+    height:34px;
+    left:0px;
+    padding:0px 50px;
+    position: absolute;
+    text-align: right;
+    width:100%;
+    h1{
+      color:#ccc;
+      font-family: $font-style;
+      font-size: 46px;
+      margin:-3px 0 0 0;
+      text-shadow:1px 1px 1px #333, -1px -1px 1px #fff;
+    }
+  }
 }
 
 .nav_container{
@@ -52,8 +113,9 @@ a{
   text-align:center;
   .nav_item{
     a{
-      line-height:4em;
       display:block;
+      height:50px;
+      padding:15px 0 0 0;
       width:100%;
       &:hover{color:#333;}
     }
@@ -269,8 +331,8 @@ a{
 
 .lesson_mod{
   background:white;
-  height:210px;
-  margin:-210px 0 0 0;
+  height:150px;
+  margin:-150px 0 0 0;
   position:fixed;
   width:100%;
   z-index:99;
@@ -396,7 +458,7 @@ a{
     .lesson_mod_info{
       float:left;
       width:48%;
-      padding:15px;
+      padding:10px 0 0 0;
       h1{
         color:#555;
         font-size:150%;
