@@ -45,12 +45,13 @@
         </div>
         <div class="page_quote">
           <div class="quote_container">
-            <h1>&quot;Your Word is a</h1>
-            <h2>lamp to my feet</h2>
-            <h2>and a <span style="color:white;">light</span></h2>
-            <h3>to my path&quot;</h3>
+            <h1>Your <span style="font-size:160%;">Word</span></h1>
+            <h2><span style="font-size:70%;">is a</span> lamp to</h2>
+            <h2>my feet <span style="font-size:70%;">and a</h2>
+            <h3><span style="color:white;">light</span> to my <span style="color:white;">path</span></h3>
           </div>
           <div class="sun_css">&nbsp;</div>
+          <div class="path_css">&nbsp;</div>
         </div>
       </div>
     </script>
@@ -170,9 +171,10 @@
 
     <script type="text/x-handlebars" data-template-name="lessonshow">
       <div class="row">
+      <div class="lesson_show_back"></div>
         <div class="lesson_container large-6 small-12 columns">
           <div class="lesson_wrapper">
-            <img class="lesson_image" {{bindAttr src="imageUrl"}}>
+            <img class="lesson_image" id="art" {{bindAttr src="imageUrl"}}>
             <div class="play_mark_large play_button paused">{{mp3}}</div>
           </div>
         </div>

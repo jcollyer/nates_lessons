@@ -11,7 +11,10 @@ body {
 
 .row {
   width: 100%;
-  max-width: auto; }
+  max-width: 100em;
+  margin: 0px; }
+  .row .columns {
+    padding: 0px; }
 
 h1 {
   font-family: "Istok Web", sans-serif;
@@ -107,38 +110,59 @@ a {
 .page_quote {
   font-family: "Istok Web", sans-serif;
   height: 180px;
+  left: 20px;
   position: absolute;
-  right: -10px;
   text-align: center;
-  top: -170px;
-  width: 340px; }
+  top: -220px;
+  width: 360px; }
   .page_quote .sun_css {
     background: #fbf62a;
-    border-radius: 50px;
-    bottom: 24px;
-    height: 100px;
+    border-radius: 150px;
+    bottom: -54px;
+    height: 200px;
+    left: -80px;
     position: absolute;
-    right: 66px;
-    width: 100px;
+    width: 200px;
     z-index: 8; }
+  .page_quote .path_css {
+    background: #333;
+    border-radius: 100px;
+    bottom: 0px;
+    height: 70px;
+    position: absolute;
+    right: 5px;
+    width: 120px;
+    transform: rotate(-30deg);
+    -ms-transform: rotate(-30deg);
+    -webkit-transform: rotate(150deg); }
+    .page_quote .path_css:before {
+      border-top: 270px solid #333;
+      border-left: 200px solid transparent;
+      content: "";
+      left: -140px;
+      height: 0;
+      position: absolute;
+      top: -200px;
+      width: 0; }
   .page_quote .quote_container {
     position: absolute;
     z-index: 9; }
     .page_quote .quote_container h1 {
       color: #444;
+      font-size: 140%;
       font-weight: bold;
-      line-height: 0.8em;
+      line-height: 1.1em;
       margin: 0px;
       text-transform: uppercase; }
     .page_quote .quote_container h2 {
       color: #444;
       font-size: 260%;
       font-style: italic;
-      line-height: 1.2em;
+      line-height: 0.9em;
       margin: 0px; }
     .page_quote .quote_container h3 {
       color: #444;
-      font-size: 240%;
+      font-size: 200%;
       letter-spacing: 1px;
       line-height: 1em;
       margin: 0px;
@@ -149,16 +173,20 @@ a {
   height: 360px;
   position: relative;
   width: 100%;
-  padding: 20px 0 0 0; }
-  .footer .footer_content_container .footer_content .footer_content_header {
-    background: #444;
-    color: #ccc;
-    height: 40px;
-    padding: 5px;
-    text-align: center; }
-  .footer .footer_content_container .footer_content .footer_content_body {
-    background: #777;
-    padding: 10px; }
+  padding: 20px 0 0 0;
+  z-index: 98; }
+  .footer .footer_content_container {
+    position: relative;
+    z-index: 9; }
+    .footer .footer_content_container .footer_content .footer_content_header {
+      background: #444;
+      color: #ccc;
+      height: 40px;
+      padding: 5px;
+      text-align: center; }
+    .footer .footer_content_container .footer_content .footer_content_body {
+      background: #777;
+      padding: 10px; }
 
 @media screen and (max-width: 700px) {
   .lesson_mod {
@@ -174,3 +202,20 @@ a {
 
   .section {
     width: 97%; } }
+.lesson_show_back {
+  background: url(/images/crying_out_to_god.jpg) right top no-repeat;
+  background-size: 100%;
+  background-position: 0 -100px;
+  -moz-filter: blur(8px);
+  -webkit-filter: blur(8px);
+  height: 100%;
+  width: 100%;
+  position: absolute; }
+  .lesson_show_back:after {
+    content: "";
+    background: rgba(255, 255, 255, 0.6);
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    position: absolute; }
