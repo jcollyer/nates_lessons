@@ -1,5 +1,204 @@
-$font-body: 'News Cycle', sans-serif;
-$font-heading: 'Istok Web', sans-serif;
+.lesson_mod{
+  background:white;
+  height:150px;
+  margin:-150px 0 0 0;
+  position:fixed;
+  width:100%;
+  z-index:99;
+  .lesson_mod_menu{
+    background:#eee;
+    height:100px;
+    width:100%;
+    .lesson_mod_image{
+      float:left;
+      margin:0 10px 0 0;
+      position:relative;
+      width:100px;
+      .mod_img{
+        width:140px;
+        float:left;
+      }
+      .mod_img_pause{
+        width:140px;
+        float:left;
+      }
+    }
+    .lesson_mod_controls{
+      float:left;
+      width:33%;
+      .lesson_progress_bar{
+        border:1px solid #999;
+        border-radius:20px;
+        height:20px;
+        margin:10px;
+        padding:3px 4px;
+        .progress_bar{
+          border-radius:130px;
+          height:12px;
+          background:#555;
+        }
+      }
+      .lesson_mod_time{
+        width:100%;
+        height:24px;
+        .lesson_current_time{
+          color:#555;
+          float:left;
+          font-size:80%;
+          margin:0 0 0 10px;
+          padding:3px;
+          position:relative;
+          width:50%;
+           &:before{
+            border-left: 15px solid transparent;
+            border-right: 15px solid transparent;
+            border-top: 6px solid #555;
+            content:"";
+            height: 0;
+            left:5px;
+            position:absolute;
+            bottom:-4px;
+            width: 0;
+          }
+        }
+        .lesson_duration{
+          color:#555;
+          float:right;
+          font-size:80%;
+          margin:0 6px 0 0;
+          padding:3px;
+          text-align:right;
+          position:relative;
+          &:before{
+            border-left: 15px solid transparent;
+            border-right: 15px solid transparent;
+            border-top: 6px solid #555;
+            content:"";
+            height: 0;
+            position:absolute;
+            right:8px;
+            bottom:-4px;
+            width: 0;
+          }
+        }
+      }
+      .lesson_mod_volume{
+        display:block;
+        height:30px;
+        padding:0 0 0 12%;
+        width:100%;
+        .lesson_mod_volume_controls{
+          float:left;
+          width:27px;
+        }
+        .volume-meter {
+          border:1px solid #999;
+          border-radius:20px;
+          display:block; 
+          float:left;
+          height: 20px; 
+          margin: 3px 3px 0px; 
+          padding:0 6px 0 0px;
+          width:60%;
+          .volume-bar { 
+            -webkit-animation: volumecontrol 8s infinite ease-in-out; 
+            -moz-animation: volumecontrol 8s infinite ease-in-out; 
+            animation: volumecontrol 8s infinite ease-in-out; 
+            height: 12px; 
+            width: 75%; 
+            margin: 3px 3px; 
+            display: block; 
+            border-radius: 6px;  
+            background: #555;
+          }
+        }
+        .lesson_mod_volume_max{
+          background: url(/images/icon_volume_max.png) no-repeat;
+          float:left;
+          width:40px;
+        }
+
+        .jp-mute{background: url(/images/icon_volume_play.png) no-repeat;}
+        .jp-unmute{background: url(/images/icon_volume_mute.png) no-repeat;}
+        .jp-volume-max{}
+        .icon-volume { display: inline-block; width: 26px; height: 26px; margin: 0px; }
+      } 
+    }
+    .lesson_mod_info{
+      float:left;
+      width:48%;
+      padding:10px 0 0 0;
+      h1{
+        color:#555;
+        font-size:150%;
+        margin:0 0 3% 0;
+        text-align: right;
+        text-transform: uppercase;
+      }
+      h2{
+        color:#555;
+        font-size:110%;
+        margin:0px;
+        text-align: right;
+        line-height: 1em;
+      }
+      h3{
+        color:#555;
+        font-size: 90%;
+        line-height:1em; 
+        margin:0px;
+        text-align:right;
+      }
+    }
+  }
+}
+
+.social_container{
+  float:right;
+  margin:0 -3px 0 0;
+  position: relative;
+  width:80px;
+  .social_facebook{
+    background:url(/images/icon-facebook.png) no-repeat;
+    top:1px;
+  }
+  .social_twitter{
+    background:url(/images/icon-twitter.png) no-repeat;
+    top:34px;
+  }
+  .social_google{
+    background:url(/images/icon-google-plus.png) no-repeat;
+    top:67px;
+  }
+  .social_icon{
+    background-size:30%;
+    background-position:3px;
+    border:1px solid #ddd;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    font-size: 90%;
+    height:32px;
+    padding:4px 5px;
+    position: absolute;
+    text-indent: 85px;
+    right:-20px;
+    width:100%;
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+    &:hover{
+      background:#777;
+      color:white;
+      text-indent: 5px;
+      right:-2px;
+      -webkit-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
+    }
+  }
+}
 
 
 

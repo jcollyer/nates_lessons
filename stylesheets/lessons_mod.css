@@ -1,19 +1,19 @@
 .lesson_mod {
   background: white;
-  height: 210px;
-  margin: -210px 0 0 0;
+  height: 150px;
+  margin: -150px 0 0 0;
   position: fixed;
   width: 100%;
   z-index: 99; }
   .lesson_mod .lesson_mod_menu {
-    background: #95ff6c;
-    height: 140px;
+    background: #eee;
+    height: 100px;
     width: 100%; }
     .lesson_mod .lesson_mod_menu .lesson_mod_image {
       float: left;
       margin: 0 10px 0 0;
       position: relative;
-      width: 140px; }
+      width: 100px; }
       .lesson_mod .lesson_mod_menu .lesson_mod_image .mod_img {
         width: 140px;
         float: left; }
@@ -115,7 +115,7 @@
     .lesson_mod .lesson_mod_menu .lesson_mod_info {
       float: left;
       width: 48%;
-      padding: 15px; }
+      padding: 10px 0 0 0; }
       .lesson_mod .lesson_mod_menu .lesson_mod_info h1 {
         color: #555;
         font-size: 150%;
@@ -136,33 +136,42 @@
         text-align: right; }
 
 .social_container {
-  width: 100%; }
+  float: right;
+  margin: 0 -3px 0 0;
+  position: relative;
+  width: 80px; }
   .social_container .social_facebook {
-    background: url(/images/icon-facebook.png) no-repeat; }
+    background: url(/images/icon-facebook.png) no-repeat;
+    top: 1px; }
   .social_container .social_twitter {
-    background: url(/images/icon-twitter.png) no-repeat; }
+    background: url(/images/icon-twitter.png) no-repeat;
+    top: 34px; }
   .social_container .social_google {
-    background: url(/images/icon-google-plus.png) no-repeat; }
+    background: url(/images/icon-google-plus.png) no-repeat;
+    top: 67px; }
   .social_container .social_icon {
-    background-size: 20%;
+    background-size: 30%;
     background-position: 3px;
-    border: 1px solid #555;
-    border-radius: 20px;
-    float: left;
-    font-family: "Istok Web", sans-serif;
-    font-size: 80%;
-    height: 33px;
-    margin: 0 2px;
-    padding: 0 0px 0 35px;
-    width: 30%; }
-    .social_container .social_icon .social_detail {
-      background: #555;
-      border: 1px solid #555;
-      border-top-right-radius: 20px;
-      border-bottom-right-radius: 20px;
-      border-left: 1px solid #555;
-      color: #eee;
-      height: 32px;
-      line-height: 2.2em;
-      margin: 0 -2px 0 0;
-      text-align: center; }
+    border: 1px solid #ddd;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    font-size: 90%;
+    height: 32px;
+    padding: 4px 5px;
+    position: absolute;
+    text-indent: 85px;
+    right: -20px;
+    width: 100%;
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out; }
+    .social_container .social_icon:hover {
+      background: #777;
+      color: white;
+      text-indent: 5px;
+      right: -2px;
+      -webkit-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out; }
