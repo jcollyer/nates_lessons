@@ -41,22 +41,16 @@ a{
   margin:150px 0 0 0;
 }
 
-.page_strip{
-  background:url(/images/grid.png);
-  background-position:0 -440px;
-  height:20px; 
-  width:100%;
-}
-
-.home_header{
+.page_header{
   background: url(/images/home-header.jpg) no-repeat;
   background-size: 100%;
-  border-bottom: 1px solid #999;
+  border-bottom: 2px solid #999;
+  border-top:3px solid #777;
   font-size: 0%;
   padding:9% 0;
   position: relative;
   width:100%;
-  .home_header_info_one{
+  .page_header_info_one{
     background:rgba(255,255,255,0.5);
     bottom:120px;
     height:27px;
@@ -72,7 +66,7 @@ a{
       text-shadow:1px 1px 0px #333;
     }
   }
-  .home_header_info_two{
+  .page_header_info_two{
     background:rgba(255,255,255,0.5);
     bottom:70px;
     height:47px;
@@ -88,7 +82,7 @@ a{
       text-shadow:1px 1px 0px #333;
     }
   }
-  .home_header_info_three{
+  .page_header_info_three{
     background:rgba(100,100,100,0.5);
     bottom:20px;
     height:34px;
@@ -137,9 +131,9 @@ a{
   font-family: $font-heading;
   height:180px;  
   position:absolute;
-  right:40px;
+  right:-10px;
   text-align: center;
-  top:-110px;
+  top:-170px;
   width:340px;
   .sun_css{
     background: #fbf62a;
@@ -180,10 +174,26 @@ a{
 }
 
 .footer{
-  background: #95ff6c;
+  background:#333;
   height:360px;
   position: relative;
   width:100%;
+  padding:20px 0 0 0;
+  .footer_content_container{
+    .footer_content{
+      .footer_content_header{
+        background: #444;
+        color:#ccc;
+        height:40px;
+        padding:5px;
+        text-align: center;
+      }
+      .footer_content_body{
+        background:#777;
+        padding:10px;
+      }
+    }
+  }
 }
 
 
@@ -488,7 +498,7 @@ a{
   float:right;
   margin:0 -3px 0 0;
   position: relative;
-  width:5%;
+  width:80px;
   .social_facebook{
     background:url(/images/icon-facebook.png) no-repeat;
     top:1px;
@@ -502,15 +512,16 @@ a{
     top:67px;
   }
   .social_icon{
-    background-size:40%;
+    background-size:30%;
     background-position:3px;
     border:1px solid #999;
     border-bottom-left-radius: 20px;
     border-top-left-radius: 20px;
-    font-size: 0%;
+    font-size: 90%;
     height:32px;
     padding:3px 5px;
     position: absolute;
+    text-indent: 85px;
     right:-20px;
     width:100%;
     -webkit-transition: all 0.1s ease-in-out;
@@ -519,7 +530,7 @@ a{
     transition: all 0.1s ease-in-out;
     &:hover{
       background:rgba(100,100,100,0.2);
-      font-size: 90%;
+      text-indent: 5px;
       right:-2px;
       -webkit-transition: all 0.3s ease-in-out;
       -moz-transition: all 0.3s ease-in-out;
