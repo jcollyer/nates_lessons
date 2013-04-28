@@ -17,10 +17,9 @@ body{
 
 .row {
   width:100%;
-  max-width: 100em;
-  margin:0px;
+  margin:0px auto; 
   .columns{
-    padding:0px;
+    padding:5px;
   }
 }
 
@@ -46,62 +45,13 @@ a{
 }
 
 .page_header{
-  background: url(/images/home-header.jpg) no-repeat;
-  background-size: 100%;
-  border-bottom: 2px solid #999;
-  border-top:3px solid #777;
-  font-size: 0%;
-  padding:9% 0;
-  position: relative;
-  width:100%;
+  background:#2b7baa;
   .page_header_info_one{
-    background:rgba(255,255,255,0.5);
-    bottom:120px;
-    height:27px;
-    left:0px;
-    padding:0px 30px;
-    position: absolute;
-    text-align: left;
-    width:100%;
-    h1{
-      font-family: $font-style;
-      font-size: 46px;
-      margin:-10px 0 0 0;
-      text-shadow:1px 1px 0px #333;
-    }
+  
+   
   }
   .page_header_info_two{
-    background:rgba(255,255,255,0.5);
-    bottom:70px;
-    height:47px;
-    left:0px;
-    padding:0px 30px;
-    position: absolute;
-    text-align: center;
-    width:100%;
-    h1{
-      font-family: $font-style;
-      font-size: 86px;
-      margin:-20px 0 0 0;
-      text-shadow:1px 1px 0px #333;
-    }
-  }
-  .page_header_info_three{
-    background:rgba(100,100,100,0.5);
-    bottom:20px;
-    height:34px;
-    left:0px;
-    padding:0px 50px;
-    position: absolute;
-    text-align: right;
-    width:100%;
-    h1{
-      color:#ccc;
-      font-family: $font-style;
-      font-size: 46px;
-      margin:-3px 0 0 0;
-      text-shadow:1px 1px 1px #333, -1px -1px 1px #fff;
-    }
+
   }
 }
 
@@ -113,7 +63,7 @@ a{
     a{
       display:block;
       height:50px;
-      padding:15px 0 0 0;
+      padding:10px 0 0 0;
       width:100%;
       &:hover{color:#333;}
     }
@@ -201,25 +151,26 @@ a{
 }
 
 .footer{
-  background:#333;
+  background:#3498db;
   height:360px;
-  position: relative;
+  margin:210px 0 0 0;
   width:100%;
   padding:20px 0 0 0;
+  position: relative;
   z-index:98;
   .footer_content_container{
     position:relative;
     z-index:9;
     .footer_content{
       .footer_content_header{
-        background: #444;
-        color:#ccc;
+        background: #205b80;
+        color:#aed6ee;
         height:40px;
         padding:5px;
         text-align: center;
       }
       .footer_content_body{
-        background:#777;
+        background:#85c1e5;
         padding:10px;
       }
     }
