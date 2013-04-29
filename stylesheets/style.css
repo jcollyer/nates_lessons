@@ -3,10 +3,20 @@
 @import url('lesson.css');
 @import url('icons.css');
 @import url('audio_interface.css');
+@font-face {
+  font-family: "raleway";
+  src: url("type/raleway_thin-webfont.eot");
+  src: local("☺"), url("type/raleway_thin-webfont.woff") format("woff"), url("type/raleway_thin-webfont.otf") format("opentype"), url("type/raleway_thin-webfont.svg#raleway_thin-webfont") format("svg"); }
+
+@font-face {
+  font-family: "junction";
+  src: url("type/Junction-webfont.eot");
+  src: local("☺"), url("type/Junction-webfont.woff") format("woff"), url("type/Junction-webfont.otf") format("opentype"), url("type/Junction-webfont.svg#Junction-webfont") format("svg"); }
+
 body {
-  background: white;
+  background: #0ca7d3;
   color: #333;
-  font-family: "News Cycle", sans-serif;
+  font-family: "junction", sans-serif;
   font-size: 110%; }
 
 .row {
@@ -16,38 +26,77 @@ body {
     padding: 5px; }
 
 h1 {
-  font-family: "Istok Web", sans-serif;
+  font-family: "raleway", Georgia, serif;
   font-weight: 400;
   color: white; }
 
 h2 {
-  font-family: "Istok Web", sans-serif;
+  font-family: "raleway", sans-serif;
   font-weight: 400;
   letter-spacing: -1px; }
+
+h3 {
+  font-family: "raleway", sans-serif; }
 
 a {
   text-decoration: none;
   color: #444; }
 
-.container {
-  margin: 150px 0 0 0; }
+.hh1 {
+  color: #eee;
+  font-family: "raleway", Georgia, serif;
+  font-size: 170%;
+  margin: 0px; }
 
-.page_header {
-  background: #2b7baa; }
+.hh2 {
+  color: #eee;
+  font-family: "raleway", Georgia, serif;
+  font-size: 130%;
+  margin: 0px; }
 
-.nav_container {
-  bottom: 0px;
-  position: relative;
-  text-align: center; }
-  .nav_container .nav_item a {
-    display: block;
-    height: 50px;
-    padding: 10px 0 0 0;
-    width: 100%; }
-    .nav_container .nav_item a:hover {
-      color: #333; }
-  .nav_container .nav_item:hover {
-    background: #ccc; }
+.hh3 {
+  color: #eee;
+  font-family: "raleway", Georgia, serif;
+  font-size: 220%;
+  margin: 0 0 30px 0; }
+
+.page_header .page_header_info_one {
+  padding: 85px 0 0 0; }
+
+.home_lessons_link {
+  border: 1px solid #eee;
+  color: #eee;
+  font-family: "raleway", Georgia, serif;
+  padding: 20px 80px; }
+  .home_lessons_link:hover {
+    background: #eee;
+    color: #222; }
+
+#nav_container {
+  background: #222; }
+  #nav_container #nav_main {
+    clear: both;
+    font-family: "raleway", Georgia, serif;
+    font-size: 80%;
+    height: 47px;
+    list-style-type: none;
+    margin: 0px;
+    text-align: center; }
+    #nav_container #nav_main li {
+      border-left: 1px solid #333;
+      float: right;
+      width: 120px; }
+      #nav_container #nav_main li a {
+        color: #eee;
+        display: block;
+        padding: 16px 0; }
+        #nav_container #nav_main li a:hover {
+          background: #2f2f2f; }
+      #nav_container #nav_main li.left_link {
+        border: none;
+        float: left; }
+        #nav_container #nav_main li.left_link a:hover {
+          background: #222; }
 
 .section {
   padding: 0px 20px;
@@ -57,7 +106,8 @@ a {
   width: 80%; }
 
 .page_quote {
-  font-family: "Istok Web", sans-serif;
+  display: none;
+  font-family: "raleway", sans-serif;
   height: 180px;
   left: 20px;
   position: absolute;
@@ -118,7 +168,7 @@ a {
       text-transform: uppercase; }
 
 .footer {
-  background: #3498db;
+  background: #333;
   height: 360px;
   margin: 210px 0 0 0;
   width: 100%;
@@ -126,16 +176,17 @@ a {
   position: relative;
   z-index: 98; }
   .footer .footer_content_container {
+    height: 400px;
     position: relative;
     z-index: 9; }
     .footer .footer_content_container .footer_content .footer_content_header {
-      background: #205b80;
-      color: #aed6ee;
+      background: #777;
+      color: #222;
       height: 40px;
       padding: 5px;
       text-align: center; }
     .footer .footer_content_container .footer_content .footer_content_body {
-      background: #85c1e5;
+      background: #ccc;
       padding: 10px; }
 
 @media screen and (max-width: 700px) {

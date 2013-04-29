@@ -25,6 +25,12 @@
     }
   });
 
+  App.HomeRoute = Ember.Route.extend({
+    model: function() {
+      return App.Lesson.find();
+    }
+  });
+
   App.Lesson = DS.Model.extend({
     title: DS.attr('string'),
     summary: DS.attr('string'),
@@ -99,7 +105,12 @@
 
   $(function() {
     return $(document).on("click", ".play_button", function() {
-      var $button, mediaPath;
+      var $button, audioPlayer, mediaPath;
+      audioPlayer = $("#lesson_mod_menu");
+      console.log(audioPlayer);
+      audioPlayer.css({
+        display: 'block'
+      });
       $button = $(this);
       mediaPath = $button.text();
       window.player = $("#jquery_jplayer_1").jPlayer({

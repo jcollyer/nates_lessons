@@ -3,18 +3,29 @@
   <head>
     <meta charset="utf-8">
     <title>Nates Lessons</title>
-    <link href='http://fonts.googleapis.com/css?family=News+Cycle|Istok+Web:400,700|Satisfy' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=News+Cycle|Satisfy' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="/stylesheets/foundation.min.css">
     <link rel="stylesheet" href="/stylesheets/style.css">
   </head>
 
   <body>
     <script type="text/x-handlebars">
-      
-      {{template "lesson"}}
+      <div id="nav_container">
+        <ul id="nav_main">
+          <li class="left_link"><a href="http://www.calvary.com">Calvary.com</a></li>
+          <li><a href="#">blog</a></li>
+          <li><a href="#">video</a></li>
+          <li><a href="#">reading</a></li>
+          <li>{{#linkTo "about"}}about{{/linkTo}}</li>
+          <li><div class="slink"></div>{{#linkTo "lessons"}}teaching{{/linkTo}}</li>
+          <li>{{#linkTo "home"}}home{{/linkTo}}</li>
+        </ul>
+      </div>
+    
       <div class="container"> 
         {{outlet}}
       </div>
+
       <div class="footer">
         <div class="row footer_content_container">
           <div class="footer_content small-4 columns">
@@ -54,19 +65,26 @@
           <div class="path_css">&nbsp;</div>
         </div>
       </div>
+
+       {{template "lesson"}}
     </script>
 
     <script type="text/x-handlebars" data-template-name="home">
       <div class="row page_header">
         <div class="small-12 large-6 columns page_header_info_one">
-          <h1>go through the <span style="font-family:'Istok Web', sans-serif;">BIBLE</span></h1>
+          <p class="hh1">Go through the Bible</p>
+          <br />  
+          <p class="hh2">with pastor</p>
+          <p class="hh3">Nate Holdridge</p>
+          {{#linkTo "lessons" class="home_lessons_link"}}Teachings{{/linkTo}} 
         </div>
         <div class="small-12 large-6 columns page_header_info_two">
-          <h1>with pastor</h1>
-          <h1>Nate Holdridge</h1>
+          <img src="/images/nate.png" />
         </div>
       </div>
-      <div class="section"></div>
+      <div class="home_page_lessons">
+        {{template "lessons"}}
+      </div>
     </script>
 
     <script type="text/x-handlebars" data-template-name="about">
@@ -81,12 +99,12 @@
           <h1>Nate Holdridge</h1>
         </div>
       </div>
-      <div class="section"></div>
+
     </script>
 
     <script type="text/x-handlebars" data-template-name="lesson">
-      <div class="lesson_mod">
-        <div class="lesson_mod_menu">
+      <div id="lesson_mod">
+        <div id="lesson_mod_menu">
           <div id="jquery_jplayer_1" class="jp-jplayer"></div>
           <div id="jp_container_1" class="jp-audio">
             <div class="jp-controls">
@@ -135,14 +153,6 @@
             <div class="social_icon social_google">google+</div>  
           </div>
         </div>
-        <div class="row nav_container">
-          <div class="nav_item small-6 large-2 columns">{{#linkTo "home"}}home{{/linkTo}}</div>
-          <div class="nav_item small-6 large-2 columns">{{#linkTo "lessons"}}teaching{{/linkTo}}</div>
-          <div class="nav_item small-6 large-2 columns">{{#linkTo "about"}}about{{/linkTo}}</div>
-          <div class="nav_item small-6 large-2 columns"><a href="#">reading</a></div>
-          <div class="nav_item small-6 large-2 columns"><a href="#">video</a></div>
-          <div class="nav_item small-6 large-2 columns"><a href="#">blog</a></div>
-        </div>
       </div>
     </script>
 
@@ -156,20 +166,20 @@
 
     <script type="text/x-handlebars" data-template-name="_lessons_list">
       <div class="lessons_list large-3 small-6 columns">
-        <div class="play_mark_small play_button paused">{{mp3}}</div>
+        <div class="play_mark_small2 play_button paused">{{mp3}}</div>
         {{#linkTo 'lessonshow' this}}
           <img {{bindAttr src="imageUrl"}}>
-          <p class="lessons_summary">
+          <h2 class="lessons_summary">
             {{summary}}
-          </p>
+          </h2>
           <h2>{{title}}</h2>
+          <h3>{{date}}</h3>
         {{/linkTo}}
       </div>
     </script>
 
     <script type="text/x-handlebars" data-template-name="lessonshow">
       <div class="row">
-      <div class="lesson_show_back"></div>
         <div class="lesson_container large-6 small-12 columns">
           <div class="lesson_wrapper">
             <img class="lesson_image" id="art" {{bindAttr src="imageUrl"}}>

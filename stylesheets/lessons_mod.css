@@ -1,86 +1,87 @@
-.lesson_mod {
+#lesson_mod {
   background: #ccc;
-  height: 150px;
-  margin: -150px 0 0 0;
+  margin: 0px 0 0 0;
   position: fixed;
+  bottom: 0px;
+  left: 0px;
   width: 100%;
-  z-index: 99; }
-  .lesson_mod .lesson_mod_menu {
-    background: #333;
+  z-index: 999; }
+  #lesson_mod #lesson_mod_menu {
+    background: #222;
     height: 100px;
     width: 100%; }
-    .lesson_mod .lesson_mod_menu .lesson_mod_image {
+    #lesson_mod #lesson_mod_menu .lesson_mod_image {
       float: left;
       margin: 0 10px 0 0;
       position: relative;
       width: 100px; }
-      .lesson_mod .lesson_mod_menu .lesson_mod_image .mod_img {
+      #lesson_mod #lesson_mod_menu .lesson_mod_image .mod_img {
         width: 140px;
         float: left; }
-      .lesson_mod .lesson_mod_menu .lesson_mod_image .mod_img_pause {
+      #lesson_mod #lesson_mod_menu .lesson_mod_image .mod_img_pause {
         width: 140px;
         float: left; }
-    .lesson_mod .lesson_mod_menu .lesson_mod_controls {
+    #lesson_mod #lesson_mod_menu .lesson_mod_controls {
       float: left;
       width: 33%; }
-      .lesson_mod .lesson_mod_menu .lesson_mod_controls .lesson_progress_bar {
+      #lesson_mod #lesson_mod_menu .lesson_mod_controls .lesson_progress_bar {
         border: 1px solid #999;
         border-radius: 20px;
         height: 20px;
         margin: 10px;
         padding: 3px 4px; }
-        .lesson_mod .lesson_mod_menu .lesson_mod_controls .lesson_progress_bar .progress_bar {
+        #lesson_mod #lesson_mod_menu .lesson_mod_controls .lesson_progress_bar .progress_bar {
           border-radius: 130px;
           height: 12px;
-          background: #555; }
-      .lesson_mod .lesson_mod_menu .lesson_mod_controls .lesson_mod_time {
+          background: #ccc; }
+      #lesson_mod #lesson_mod_menu .lesson_mod_controls .lesson_mod_time {
         width: 100%;
         height: 24px; }
-        .lesson_mod .lesson_mod_menu .lesson_mod_controls .lesson_mod_time .lesson_current_time {
-          color: #555;
+        #lesson_mod #lesson_mod_menu .lesson_mod_controls .lesson_mod_time .lesson_current_time {
+          color: #ccc;
           float: left;
           font-size: 80%;
           margin: 0 0 0 10px;
           padding: 3px;
           position: relative;
           width: 50%; }
-          .lesson_mod .lesson_mod_menu .lesson_mod_controls .lesson_mod_time .lesson_current_time:before {
+          #lesson_mod #lesson_mod_menu .lesson_mod_controls .lesson_mod_time .lesson_current_time:before {
             border-left: 15px solid transparent;
             border-right: 15px solid transparent;
-            border-top: 6px solid #555;
+            border-top: 6px solid #ccc;
             content: "";
             height: 0;
             left: 5px;
             position: absolute;
             bottom: -4px;
             width: 0; }
-        .lesson_mod .lesson_mod_menu .lesson_mod_controls .lesson_mod_time .lesson_duration {
-          color: #555;
+        #lesson_mod #lesson_mod_menu .lesson_mod_controls .lesson_mod_time .lesson_duration {
+          color: #ccc;
           float: right;
           font-size: 80%;
           margin: 0 6px 0 0;
           padding: 3px;
           text-align: right;
           position: relative; }
-          .lesson_mod .lesson_mod_menu .lesson_mod_controls .lesson_mod_time .lesson_duration:before {
+          #lesson_mod #lesson_mod_menu .lesson_mod_controls .lesson_mod_time .lesson_duration:before {
             border-left: 15px solid transparent;
             border-right: 15px solid transparent;
-            border-top: 6px solid #555;
+            border-top: 6px solid #ccc;
             content: "";
             height: 0;
             position: absolute;
             right: 8px;
             bottom: -4px;
             width: 0; }
-      .lesson_mod .lesson_mod_menu .lesson_mod_controls .lesson_mod_volume {
+      #lesson_mod #lesson_mod_menu .lesson_mod_controls .lesson_mod_volume {
         display: block;
         height: 30px;
         padding: 0 0 0 12%;
         width: 100%; }
-        .lesson_mod .lesson_mod_menu .lesson_mod_controls .lesson_mod_volume .lesson_mod_volume_controls {
+        #lesson_mod #lesson_mod_menu .lesson_mod_controls .lesson_mod_volume .lesson_mod_volume_controls {
           float: left;
           width: 27px; }
-        .lesson_mod .lesson_mod_menu .lesson_mod_controls .lesson_mod_volume .volume-meter {
+        #lesson_mod #lesson_mod_menu .lesson_mod_controls .lesson_mod_volume .volume-meter {
           border: 1px solid #999;
           border-radius: 20px;
           display: block;
@@ -89,7 +90,7 @@
           margin: 3px 3px 0px;
           padding: 0 6px 0 0px;
           width: 60%; }
-          .lesson_mod .lesson_mod_menu .lesson_mod_controls .lesson_mod_volume .volume-meter .volume-bar {
+          #lesson_mod #lesson_mod_menu .lesson_mod_controls .lesson_mod_volume .volume-meter .volume-bar {
             -webkit-animation: volumecontrol 8s infinite ease-in-out;
             -moz-animation: volumecontrol 8s infinite ease-in-out;
             animation: volumecontrol 8s infinite ease-in-out;
@@ -98,38 +99,38 @@
             margin: 3px 3px;
             display: block;
             border-radius: 6px;
-            background: #555; }
-        .lesson_mod .lesson_mod_menu .lesson_mod_controls .lesson_mod_volume .lesson_mod_volume_max {
+            background: #ccc; }
+        #lesson_mod #lesson_mod_menu .lesson_mod_controls .lesson_mod_volume .lesson_mod_volume_max {
           background: url(/images/icon_volume_max.png) no-repeat;
           float: left;
           width: 40px; }
-        .lesson_mod .lesson_mod_menu .lesson_mod_controls .lesson_mod_volume .jp-mute {
+        #lesson_mod #lesson_mod_menu .lesson_mod_controls .lesson_mod_volume .jp-mute {
           background: url(/images/icon_volume_play.png) no-repeat; }
-        .lesson_mod .lesson_mod_menu .lesson_mod_controls .lesson_mod_volume .jp-unmute {
+        #lesson_mod #lesson_mod_menu .lesson_mod_controls .lesson_mod_volume .jp-unmute {
           background: url(/images/icon_volume_mute.png) no-repeat; }
-        .lesson_mod .lesson_mod_menu .lesson_mod_controls .lesson_mod_volume .icon-volume {
+        #lesson_mod #lesson_mod_menu .lesson_mod_controls .lesson_mod_volume .icon-volume {
           display: inline-block;
           width: 26px;
           height: 26px;
           margin: 0px; }
-    .lesson_mod .lesson_mod_menu .lesson_mod_info {
+    #lesson_mod #lesson_mod_menu .lesson_mod_info {
       float: left;
       width: 48%;
       padding: 10px 0 0 0; }
-      .lesson_mod .lesson_mod_menu .lesson_mod_info h1 {
-        color: #555;
+      #lesson_mod #lesson_mod_menu .lesson_mod_info h1 {
+        color: #ccc;
         font-size: 150%;
         margin: 0 0 3% 0;
         text-align: right;
         text-transform: uppercase; }
-      .lesson_mod .lesson_mod_menu .lesson_mod_info h2 {
-        color: #555;
+      #lesson_mod #lesson_mod_menu .lesson_mod_info h2 {
+        color: #ccc;
         font-size: 110%;
         margin: 0px;
         text-align: right;
         line-height: 1em; }
-      .lesson_mod .lesson_mod_menu .lesson_mod_info h3 {
-        color: #555;
+      #lesson_mod #lesson_mod_menu .lesson_mod_info h3 {
+        color: #ccc;
         font-size: 90%;
         line-height: 1em;
         margin: 0px;
@@ -152,7 +153,6 @@
   .social_container .social_icon {
     background-size: 30%;
     background-position: 3px;
-    border: 1px solid #ddd;
     border-bottom-left-radius: 20px;
     border-top-left-radius: 20px;
     font-size: 90%;
@@ -167,7 +167,7 @@
     -o-transition: all 0.1s ease-in-out;
     transition: all 0.1s ease-in-out; }
     .social_container .social_icon:hover {
-      background: #777;
+      background: #292929;
       color: white;
       text-indent: 5px;
       right: -2px;

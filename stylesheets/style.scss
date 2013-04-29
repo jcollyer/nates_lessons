@@ -4,12 +4,31 @@
 @import url('icons.css');
 @import url('audio_interface.css');
 
-$font-body: 'News Cycle', sans-serif;
-$font-heading: 'Istok Web', sans-serif;
+
+@font-face {
+  font-family: "raleway";
+  src: url("type/raleway_thin-webfont.eot");
+  src: local("☺"),
+    url("type/raleway_thin-webfont.woff") format("woff"),
+    url("type/raleway_thin-webfont.otf") format("opentype"),
+    url("type/raleway_thin-webfont.svg#raleway_thin-webfont") format("svg");
+  }
+@font-face {
+  font-family: "junction";
+  src: url("type/Junction-webfont.eot");
+  src: local("☺"),
+    url("type/Junction-webfont.woff") format("woff"),
+    url("type/Junction-webfont.otf") format("opentype"),
+    url("type/Junction-webfont.svg#Junction-webfont") format("svg");
+  }
+
+
+$font-body: 'junction', sans-serif;
+$font-heading: 'raleway', sans-serif;
 $font-style: 'Satisfy', cursive;
 
 body{
-  background:white;
+  background:#0ca7d3;
   color:#333;
   font-family:$font-body;
   font-size: 110%;
@@ -24,7 +43,7 @@ body{
 }
 
 h1{
-  font-family:$font-heading;
+  font-family:"raleway", Georgia, serif;
   font-weight:400;
   color:white;
 }
@@ -35,40 +54,94 @@ h2{
   letter-spacing:-1px;
 }
 
+h3{
+  font-family:$font-heading;
+}
+
 a{
   text-decoration:none;
   color:#444;
 }
 
+.hh1{
+  color:#eee;
+  font-family:"raleway", Georgia, serif;
+  font-size:170%;
+  margin:0px;
+}
+
+.hh2{
+  color:#eee;
+  font-family:"raleway", Georgia, serif;
+  font-size:130%;
+  margin:0px;
+}
+
+.hh3{
+  color:#eee;
+  font-family:"raleway", Georgia, serif;
+  font-size:220%;
+  margin:0 0 30px 0;
+}
+
+
 .container {
-  margin:150px 0 0 0;
 }
 
 .page_header{
-  background:#2b7baa;
   .page_header_info_one{
-  
-   
+    padding:85px 0 0 0;
   }
   .page_header_info_two{
 
   }
 }
 
-.nav_container{
-  bottom:0px;
-  position:relative;
-  text-align:center;
-  .nav_item{
-    a{
-      display:block;
-      height:50px;
-      padding:10px 0 0 0;
-      width:100%;
-      &:hover{color:#333;}
-    }
-    &:hover{
-      background:#ccc;
+.home_lessons_link{
+  border:1px solid #eee;
+  color:#eee;
+  font-family:"raleway", Georgia, serif;
+  padding:20px 80px;
+  &:hover{
+    background:#eee;
+    color:#222;
+  }
+}
+.home_page_lessons{
+
+}
+
+#nav_container{
+    background:#222;
+  #nav_main{
+    clear:both;
+    font-family:"raleway", Georgia, serif;
+    font-size:80%;
+    height:47px;
+    list-style-type:none;
+    margin:0px;
+    text-align:center;
+    li{
+      border-left:1px solid #333;
+      float:right;
+      width:120px;
+      a{
+        color:#eee;
+        display:block;
+        padding:16px 0;
+        &:hover{
+          background:#2f2f2f;
+        }
+      }
+      &.left_link{
+        border:none;
+        float:left;
+        a{
+          &:hover{
+            background:#222;
+          }
+        }
+      }
     }
   }
 }
@@ -82,6 +155,7 @@ a{
 }
 
 .page_quote{
+  display:none;
   font-family: $font-heading;
   height:180px;  
   left:20px;
@@ -151,7 +225,7 @@ a{
 }
 
 .footer{
-  background:#3498db;
+  background:#333;
   height:360px;
   margin:210px 0 0 0;
   width:100%;
@@ -159,18 +233,19 @@ a{
   position: relative;
   z-index:98;
   .footer_content_container{
+    height:400px;
     position:relative;
     z-index:9;
     .footer_content{
       .footer_content_header{
-        background: #205b80;
-        color:#aed6ee;
+        background: #777;
+        color:#222;
         height:40px;
         padding:5px;
         text-align: center;
       }
       .footer_content_body{
-        background:#85c1e5;
+        background:#ccc;
         padding:10px;
       }
     }

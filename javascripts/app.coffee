@@ -15,6 +15,9 @@ App.LessonsRoute = Ember.Route.extend
   model: ->
     App.Lesson.find()
 
+App.HomeRoute = Ember.Route.extend
+  model: ->
+    App.Lesson.find()
 
 App.Lesson = DS.Model.extend
   title: DS.attr('string')
@@ -95,6 +98,9 @@ App.Lesson.FIXTURES = [
 
 $ ->
   $(document).on "click", ".play_button",  ->
+    audioPlayer = $("#lesson_mod_menu")
+    console.log audioPlayer
+    audioPlayer.css display: 'block'
     $button = $(this)
     mediaPath =  $button.text()
     window.player = $("#jquery_jplayer_1").jPlayer

@@ -10,7 +10,15 @@ $(document).ready(function() {
 //         swfPath: "http://jplayer.org/latest/js",
 //         supplied: "mp3, oga"
 //     });
-    var play = $('#art').prop('src');
-    console.log(play);
+ 
 
-});                                      
+
+    // var play = $('#art').prop('src');
+    // console.log(play);
+
+
+  $('.play_button').click(function(){
+  	console.log("ho");
+  })
+});                         
+

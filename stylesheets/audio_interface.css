@@ -65,6 +65,28 @@
     top: 8px;
     width: 0; }
 
+.play_mark_small2 {
+  border: 2px solid #fff;
+  border-radius: 35px;
+  height: 50px;
+  left: 17%;
+  margin: -25px 0 0 -25px;
+  opacity: 0.50;
+  position: absolute;
+  top: 15%;
+  width: 50px;
+  z-index: 9; }
+  .play_mark_small2:before {
+    border-left: 30px solid #fff;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    content: "";
+    height: 0;
+    left: 11px;
+    position: absolute;
+    top: 8px;
+    width: 0; }
+
 .pause_mark_small {
   border: 2px solid #fff;
   border-radius: 35px;
