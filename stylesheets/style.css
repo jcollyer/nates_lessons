@@ -168,26 +168,24 @@ a {
       text-transform: uppercase; }
 
 .footer {
-  background: #333;
-  height: 360px;
-  margin: 210px 0 0 0;
+  margin: 0 0 20px 0;
   width: 100%;
-  padding: 20px 0 0 0;
+  padding: 0px 0 0 0;
   position: relative;
   z-index: 98; }
   .footer .footer_content_container {
     height: 400px;
     position: relative;
     z-index: 9; }
-    .footer .footer_content_container .footer_content .footer_content_header {
-      background: #777;
-      color: #222;
-      height: 40px;
-      padding: 5px;
-      text-align: center; }
-    .footer .footer_content_container .footer_content .footer_content_body {
-      background: #ccc;
-      padding: 10px; }
+    .footer .footer_content_container .footer_content {
+      margin: 0 0 0px 0; }
+      .footer .footer_content_container .footer_content .footer_content_header {
+        background: #222;
+        color: #eee;
+        padding: 5px; }
+      .footer .footer_content_container .footer_content .footer_content_body {
+        background: #fff;
+        padding: 10px; }
 
 @media screen and (max-width: 700px) {
   .lesson_mod {
